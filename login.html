@@ -139,7 +139,7 @@ button:hover {
     <div class="container">
         <h1>Login</h1>
         <form id="login-form" action="#" method="post">  <div class="form-group">
-                <label for="username">Nome de Usuário ou Email:</label>  <input type="text" id="username" name="username" required>
+                <label for="username">Nome de Usuário ou Email:</label>  <input type="text" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Senha:</label>
@@ -149,13 +149,13 @@ button:hover {
         </form>
         <div class="links">
             <a href="#">Esqueceu sua senha?</a>
-            <a href="#">Criar uma conta</a>
+            <a href="cadastro.html">Criar uma conta</a>
         </div>
         <div id="error-message" style="color: red;"></div>  </div>
 
     <script>
-        const SUPABASE_URL = 'https://supabase.com/dashboard/project/ixcakvpgienmjcipvlbt';  // Substitua com o URL do seu projeto
-        const SUPABASE_KEY = 'login2277!!';  // Substitua com sua chave anon
+        const SUPABASE_URL = 'https://ixcakvpgienmjcipvlbt.supabase.co';  // Substitua com o URL do seu projeto
+        const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Iml4Y2FrdnBnaWVubWpjaXB2bGJ0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcwNTQ4NDAsImV4cCI6MjA2MjYzMDg0MH0.G8NH2-P9oAJ7dSBaUwxxHRu2IcgEZY4WA-ota-QpjU4';  // Substitua com sua chave anon
         const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
         const form = document.getElementById('login-form');
